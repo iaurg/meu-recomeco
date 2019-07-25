@@ -10,13 +10,13 @@ import ListItem from "@material-ui/core/ListItem"
 import Tooltip from "@material-ui/core/Tooltip"
 
 // @material-ui/icons
-import { Apps, CloudDownload } from "@material-ui/icons"
+// import { Apps, CloudDownload } from "@material-ui/icons"
 
 // React icons
 import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa"
 
 // core components
-import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx"
+// import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx"
 import Button from "components/CustomButtons/Button.jsx"
 
 import headerLinksStyle from "assets/jss/material-kit-react/components/headerLinksStyle.jsx"
@@ -26,7 +26,15 @@ function HeaderLinks({ ...props }) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <CustomDropdown
+        <Button
+          href="https://forms.gle/hsX3teRpgjbTcGSa9"
+          color="transparent"
+          target="_blank"
+          className={classes.navLink}
+        >
+          Faça parte do projeto
+        </Button>
+        {/* <CustomDropdown
           noLiPadding
           buttonText="Faça parte do projeto"
           buttonProps={{
@@ -46,7 +54,7 @@ function HeaderLinks({ ...props }) {
               Dúvidas Frequentes
             </a>,
           ]}
-        />
+        /> */}
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
@@ -55,13 +63,13 @@ function HeaderLinks({ ...props }) {
           target="_blank"
           className={classes.navLink}
         >
-          <CloudDownload className={classes.icons} /> Dúvidas Frequentes
+          Dúvidas Frequentes
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-twitter"
-          title="Follow us on twitter"
+          title="Siga no Twitter"
           placement={
             typeof window !== "undefined" && window.innerWidth > 959
               ? "top"
@@ -70,7 +78,7 @@ function HeaderLinks({ ...props }) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="https://twitter.com/CreativeTim"
+            href="https://twitter.com/HellgirlNp"
             target="_blank"
             color="transparent"
             className={classes.navLink}
@@ -79,27 +87,7 @@ function HeaderLinks({ ...props }) {
           </Button>
         </Tooltip>
       </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram-facebook"
-          title="Follow us on facebook"
-          placement={
-            typeof window !== "undefined" && window.innerWidth > 959
-              ? "top"
-              : "left"
-          }
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            color="transparent"
-            href="https://www.facebook.com/CreativeTim"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <FaFacebook />
-          </Button>
-        </Tooltip>
-      </ListItem>
+
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-tooltip"

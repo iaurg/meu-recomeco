@@ -1,6 +1,4 @@
 import React from "react"
-// plugin that creates slider
-import nouislider from "nouislider"
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles"
 

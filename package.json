@@ -27,6 +27,7 @@
     "gatsby-plugin-react-helmet": "^3.0.8",
     "gatsby-plugin-resolve-src": "^2.0.0",
     "gatsby-plugin-sass": "^2.0.10",
+    "gatsby-source-instagram": "^0.5.1",
     "history": "^4.7.2",
     "node-sass": "^4.11.0",
     "nouislider": "^13.1.1",

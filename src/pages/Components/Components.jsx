@@ -60,21 +60,21 @@ class Components extends React.Component {
                   <Button
                     color="primary"
                     size="lg"
-                    href="https://docs.google.com/forms/d/e/1FAIpQLScZRvJcinXS1bjWs7YxuJrlxhJST3VM6_FBBQFJbG04nn8Udg/viewform?usp=sf_link"
+                    href="https://forms.gle/GFxu69ZA11RjBAna7"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <Favorite className={classes.icons} />
-                    Quero tatuar
+                    Quero ser tatuado
                   </Button>
                   <Button
                     color="info"
                     size="lg"
-                    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                    href="https://forms.gle/hsX3teRpgjbTcGSa9"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Sou tatuador
+                    Sou tatuador e quero fazer parte do projeto
                   </Button>
                 </div>
               </GridItem>
