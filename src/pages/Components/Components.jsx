@@ -58,7 +58,7 @@ class Components extends React.Component {
           <div className={classes.container}>
             <GridContainer>
               <GridItem>
-                <div className={classes.brand}>
+                <div className={classes.brand} id="top_info">
                   <h1 className={classes.title}>Meu Recomeço</h1>
                   <h3 className={classes.subtitle}>
                     Vamos ajudar pessoas que possuem marcas de um passado não

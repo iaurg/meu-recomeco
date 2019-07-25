@@ -27,6 +27,16 @@ function HeaderLinks({ ...props }) {
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
         <Button
+          href="https://forms.gle/GFxu69ZA11RjBAna7"
+          color="transparent"
+          target="_blank"
+          className={classes.navLink}
+        >
+          Preciso ser tatuado
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
           href="https://forms.gle/hsX3teRpgjbTcGSa9"
           color="transparent"
           target="_blank"

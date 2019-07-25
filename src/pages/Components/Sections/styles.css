@@ -1,8 +1,8 @@
 @media only screen and (max-width: 768px) {
-  .SectionAbout-sections-284 {
+  #about_section {
     text-align: center;
   }
-  .Components-title-3 {
+  #top_info h1 {
     font-size: 3.2rem !important;
   }
 }

@@ -1,7 +1,6 @@
 import React from "react"
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles"
-import Favorite from "@material-ui/icons/Favorite"
 import Button from "components/CustomButtons/Button.jsx"
 import "./styles.css"
 import basicsStyle from "assets/jss/material-kit-react/views/componentsSections/basicsStyle.jsx"
@@ -43,7 +42,7 @@ class SectionAbout extends React.Component {
     const { classes } = this.props
     return (
       <div className={classes.sections}>
-        <div className={classes.container}>
+        <div className={classes.container} id="about_section">
           <div className={classes.title}>
             <h2 className={classes.title}>Sobre o projeto</h2>
             <h5 className={classes.description}>
