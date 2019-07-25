@@ -2,7 +2,7 @@ import React from "react"
 // nodejs library that concatenates classes
 import classNames from "classnames"
 // react components for routing our app without refresh
-import { Link } from "gatsby"
+//import { Link } from "gatsby"
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles"
 // @material-ui/icons
@@ -15,19 +15,14 @@ import Button from "components/CustomButtons/Button.jsx"
 import Parallax from "components/Parallax/Parallax.jsx"
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.jsx"
-import SectionBasics from "./Sections/SectionBasics.jsx"
-import SectionNavbars from "./Sections/SectionNavbars.jsx"
-import SectionTabs from "./Sections/SectionTabs.jsx"
-import SectionPills from "./Sections/SectionPills.jsx"
-import SectionNotifications from "./Sections/SectionNotifications.jsx"
-import SectionTypography from "./Sections/SectionTypography.jsx"
-import SectionJavascript from "./Sections/SectionJavascript.jsx"
-import SectionCarousel from "./Sections/SectionCarousel.jsx"
-import SectionCompletedExamples from "./Sections/SectionCompletedExamples.jsx"
-import SectionLogin from "./Sections/SectionLogin.jsx"
-import SectionExamples from "./Sections/SectionExamples.jsx"
-import SectionDownload from "./Sections/SectionDownload.jsx"
+// import SectionBasics from "./Sections/SectionBasics.jsx"
+import SectionAbout from "./Sections/SectionAbout.jsx"
 
+// import SectionPills from "./Sections/SectionPills.jsx"
+// import SectionCarousel from "./Sections/SectionCarousel.jsx"
+// import SectionCompletedExamples from "./Sections/SectionCompletedExamples.jsx"
+// import SectionExamples from "./Sections/SectionExamples.jsx"
+// import SectionDownload from "./Sections/SectionDownload.jsx"
 import Favorite from "@material-ui/icons/Favorite"
 
 import componentsStyle from "assets/jss/material-kit-react/views/components.jsx"
@@ -48,7 +43,7 @@ class Components extends React.Component {
           }}
           {...rest}
         />
-        <Parallax image={require("assets/img/bg4.jpg")}>
+        <Parallax image={require("assets/img/bg4.png")}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem>
@@ -61,14 +56,26 @@ class Components extends React.Component {
                     conhece alguém que possa interessar me mande mensagem! Vamos
                     recomeçar!!
                   </h3>
-                  <p>
-                    <Button color="primary" round>
-                      <Favorite className={classes.icons} /> Quero tatuar
-                    </Button>
-                    <Button color="default" round>
-                      Sou tatuador
-                    </Button>
-                  </p>
+                  <br />
+                  <Button
+                    color="primary"
+                    size="lg"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScZRvJcinXS1bjWs7YxuJrlxhJST3VM6_FBBQFJbG04nn8Udg/viewform?usp=sf_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Favorite className={classes.icons} />
+                    Quero tatuar
+                  </Button>
+                  <Button
+                    color="info"
+                    size="lg"
+                    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Sou tatuador
+                  </Button>
                 </div>
               </GridItem>
             </GridContainer>
@@ -76,25 +83,14 @@ class Components extends React.Component {
         </Parallax>
 
         <div className={classNames(classes.main, classes.mainRaised)}>
-          <SectionBasics />
-          <SectionNavbars />
-          <SectionTabs />
+          <SectionAbout />
+          {/* <SectionBasics />
           <SectionPills />
-          <SectionNotifications />
-          <SectionTypography />
-          <SectionJavascript />
           <SectionCarousel />
           <SectionCompletedExamples />
-          <SectionLogin />
-          <GridItem md={12} className={classes.textCenter}>
-            <Link to={"/login-page"} className={classes.link}>
-              <Button color="primary" size="lg" simple>
-                View Login Page
-              </Button>
-            </Link>
-          </GridItem>
+
           <SectionExamples />
-          <SectionDownload />
+          <SectionDownload /> */}
         </div>
         <Footer />
       </div>

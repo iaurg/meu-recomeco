@@ -1,50 +1,50 @@
 /*eslint-disable*/
-import React from "react";
+import React from "react"
 // react components for routing our app without refresh
-import { Link } from "gatsby";
+import { Link } from "gatsby"
 
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import Tooltip from "@material-ui/core/Tooltip";
+import withStyles from "@material-ui/core/styles/withStyles"
+import List from "@material-ui/core/List"
+import ListItem from "@material-ui/core/ListItem"
+import Tooltip from "@material-ui/core/Tooltip"
 
 // @material-ui/icons
-import { Apps, CloudDownload } from "@material-ui/icons";
+import { Apps, CloudDownload } from "@material-ui/icons"
 
 // React icons
-import { FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa"
 
 // core components
-import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx";
-import Button from "components/CustomButtons/Button.jsx";
+import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx"
+import Button from "components/CustomButtons/Button.jsx"
 
-import headerLinksStyle from "assets/jss/material-kit-react/components/headerLinksStyle.jsx";
+import headerLinksStyle from "assets/jss/material-kit-react/components/headerLinksStyle.jsx"
 
 function HeaderLinks({ ...props }) {
-  const { classes } = props;
+  const { classes } = props
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
-          buttonText="Components"
+          buttonText="Faça parte do projeto"
           buttonProps={{
             className: classes.navLink,
-            color: "transparent"
+            color: "transparent",
           }}
           buttonIcon={Apps}
           dropdownList={[
             <Link to="/" className={classes.dropdownLink}>
-              All components
+              Faça parte do projeto
             </Link>,
             <a
               href="https://creativetimofficial.github.io/material-kit-react/#/documentation"
               target="_blank"
               className={classes.dropdownLink}
             >
-              Documentation
-            </a>
+              Dúvidas Frequentes
+            </a>,
           ]}
         />
       </ListItem>
@@ -55,14 +55,18 @@ function HeaderLinks({ ...props }) {
           target="_blank"
           className={classes.navLink}
         >
-          <CloudDownload className={classes.icons} /> Download
+          <CloudDownload className={classes.icons} /> Dúvidas Frequentes
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-twitter"
           title="Follow us on twitter"
-          placement={typeof window !== 'undefined' && window.innerWidth > 959 ? "top" : "left"}
+          placement={
+            typeof window !== "undefined" && window.innerWidth > 959
+              ? "top"
+              : "left"
+          }
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
@@ -71,7 +75,7 @@ function HeaderLinks({ ...props }) {
             color="transparent"
             className={classes.navLink}
           >
-            <FaTwitter/>
+            <FaTwitter />
           </Button>
         </Tooltip>
       </ListItem>
@@ -79,7 +83,11 @@ function HeaderLinks({ ...props }) {
         <Tooltip
           id="instagram-facebook"
           title="Follow us on facebook"
-          placement={typeof window !== 'undefined' && window.innerWidth > 959 ? "top" : "left"}
+          placement={
+            typeof window !== "undefined" && window.innerWidth > 959
+              ? "top"
+              : "left"
+          }
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
@@ -88,29 +96,33 @@ function HeaderLinks({ ...props }) {
             target="_blank"
             className={classes.navLink}
           >
-            <FaFacebook/>
+            <FaFacebook />
           </Button>
         </Tooltip>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-tooltip"
-          title="Follow us on instagram"
-          placement={typeof window !== 'undefined' && window.innerWidth > 959 ? "top" : "left"}
+          title="Siga no instagram"
+          placement={
+            typeof window !== "undefined" && window.innerWidth > 959
+              ? "top"
+              : "left"
+          }
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
             color="transparent"
-            href="https://www.instagram.com/CreativeTimOfficial"
+            href="https://www.instagram.com/helotattoo_"
             target="_blank"
             className={classes.navLink}
           >
-            <FaInstagram/>
+            <FaInstagram />
           </Button>
         </Tooltip>
       </ListItem>
     </List>
-  );
+  )
 }
 
-export default withStyles(headerLinksStyle)(HeaderLinks);
+export default withStyles(headerLinksStyle)(HeaderLinks)
