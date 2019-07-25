@@ -69,7 +69,7 @@ class SectionAbout extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Sou tatuador, quero fazer parte
+              Sou tatuador
             </Button>
           </div>
           <div className={classes.space70} />

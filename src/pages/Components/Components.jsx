@@ -47,7 +47,7 @@ class Components extends React.Component {
           brand="Projeto Meu Recomeço"
           rightLinks={<HeaderLinks />}
           fixed
-          color="default"
+          color="white"
           changeColorOnScroll={{
             height: 400,
             color: "white",
