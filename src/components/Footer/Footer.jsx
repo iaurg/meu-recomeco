@@ -35,6 +35,15 @@ function Footer({ ...props }) {
                 Instagram
               </a>
             </ListItem>
+            <ListItem className={classes.inlineBlock}>
+              <a
+                href="https://github.com/Italox/meu-recomeco"
+                className={classes.block}
+                target="_blank"
+              >
+                Contribuir no projeto Open Source
+              </a>
+            </ListItem>
           </List>
         </div>
         <div className={classes.right}>
