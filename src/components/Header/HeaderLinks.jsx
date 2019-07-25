@@ -56,7 +56,7 @@ function HeaderLinks({ ...props }) {
           ]}
         /> */}
       </ListItem>
-      <ListItem className={classes.listItem}>
+      {/* <ListItem className={classes.listItem}>
         <Button
           href="https://www.creative-tim.com/product/material-kit-react"
           color="transparent"
@@ -65,7 +65,7 @@ function HeaderLinks({ ...props }) {
         >
           Dúvidas Frequentes
         </Button>
-      </ListItem>
+      </ListItem> */}
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-twitter"

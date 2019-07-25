@@ -1,8 +1,10 @@
 module.exports = {
   pathPrefix: `/mini-gatsbyv2-material-kit-react`,
   siteMetadata: {
-    siteUrl: 'https://cranky-booth-8c0a40.netlify.com',
     title: 'Meu Recomeço',
+    siteUrl: 'https://meurecomecotattoo.com.br',
+    description: `Esse projeto consiste em fazer tatuagens totalmente gratuitas em
+    pessoas que têm marcas de um passado não muito bom em suas vidas`,
   },
   plugins: [
     'gatsby-plugin-resolve-src',

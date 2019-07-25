@@ -3,7 +3,7 @@ import React from "react"
 import withStyles from "@material-ui/core/styles/withStyles"
 import Favorite from "@material-ui/icons/Favorite"
 import Button from "components/CustomButtons/Button.jsx"
-
+import "./styles.css"
 import basicsStyle from "assets/jss/material-kit-react/views/componentsSections/basicsStyle.jsx"
 
 class SectionAbout extends React.Component {
@@ -45,13 +45,13 @@ class SectionAbout extends React.Component {
       <div className={classes.sections}>
         <div className={classes.container}>
           <div className={classes.title}>
-            <h2>Sobre o projeto</h2>
-            <p>
-              Esse projeto consiste em fazer tatuagens totalmente gratuitas a
+            <h2 className={classes.title}>Sobre o projeto</h2>
+            <h5 className={classes.description}>
+              Esse projeto consiste em fazer tatuagens totalmente gratuitas em
               pessoas que têm marcas de um passado não muito bom em suas
               vidas... Se você for uma dessas pessoas ou conhece alguém que
-              possa interessar me mande mensagem! Vamos recomeçar!!
-            </p>
+              possa interessar faça parte do projeto! Vamos recomeçar!!
+            </h5>
 
             <Button
               color="primary"
@@ -60,7 +60,7 @@ class SectionAbout extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Quero ser tatuado
+              Preciso ser tatuado
             </Button>
             <Button
               color="info"
@@ -69,7 +69,7 @@ class SectionAbout extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Quero tatuar no projeto
+              Sou tatuador, quero fazer parte
             </Button>
           </div>
           <div className={classes.space70} />

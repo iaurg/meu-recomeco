@@ -22,6 +22,7 @@ import SectionAbout from "./Sections/SectionAbout.jsx"
 // import SectionCompletedExamples from "./Sections/SectionCompletedExamples.jsx"
 // import SectionExamples from "./Sections/SectionExamples.jsx"
 // import SectionDownload from "./Sections/SectionDownload.jsx"
+import { Helmet } from "react-helmet"
 
 import componentsStyle from "assets/jss/material-kit-react/views/components.jsx"
 
@@ -30,6 +31,18 @@ class Components extends React.Component {
     const { classes, ...rest } = this.props
     return (
       <div>
+        <div className="application">
+          <Helmet>
+            <meta charSet="utf-8" />
+            <title>Meu Recomeço</title>
+            <meta
+              name="description"
+              content="Esse projeto consiste em fazer tatuagens totalmente
+                    gratuitas a pessoas que têm marcas de um passado não muito
+                    bom em suas vidas"
+            />
+          </Helmet>
+        </div>
         <Header
           brand="Projeto Meu Recomeço"
           rightLinks={<HeaderLinks />}
@@ -48,11 +61,8 @@ class Components extends React.Component {
                 <div className={classes.brand}>
                   <h1 className={classes.title}>Meu Recomeço</h1>
                   <h3 className={classes.subtitle}>
-                    Esse projeto consiste em fazer tatuagens totalmente
-                    gratuitas a pessoas que têm marcas de um passado não muito
-                    bom em suas vidas... Se você for uma dessas pessoas ou
-                    conhece alguém que possa interessar me mande mensagem! Vamos
-                    recomeçar!!
+                    Vamos ajudar pessoas que possuem marcas de um passado não
+                    muito bom.
                   </h3>
                   <br />
                 </div>
