@@ -1,7 +1,8 @@
 module.exports = {
   pathPrefix: `/mini-gatsbyv2-material-kit-react`,
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    siteUrl: 'https://cranky-booth-8c0a40.netlify.com',
+    title: 'Meu Recomeço',
   },
   plugins: [
     'gatsby-plugin-resolve-src',
