@@ -1,6 +1,8 @@
 import React from "react"
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles"
+import Favorite from "@material-ui/icons/Favorite"
+import Button from "components/CustomButtons/Button.jsx"
 
 import basicsStyle from "assets/jss/material-kit-react/views/componentsSections/basicsStyle.jsx"
 
@@ -50,6 +52,25 @@ class SectionAbout extends React.Component {
               vidas... Se você for uma dessas pessoas ou conhece alguém que
               possa interessar me mande mensagem! Vamos recomeçar!!
             </p>
+
+            <Button
+              color="primary"
+              size="lg"
+              href="https://forms.gle/GFxu69ZA11RjBAna7"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Quero ser tatuado
+            </Button>
+            <Button
+              color="info"
+              size="lg"
+              href="https://forms.gle/hsX3teRpgjbTcGSa9"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Quero tatuar no projeto
+            </Button>
           </div>
           <div className={classes.space70} />
         </div>

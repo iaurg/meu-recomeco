@@ -11,7 +11,6 @@ import Header from "components/Header/Header.jsx"
 import Footer from "components/Footer/Footer.jsx"
 import GridContainer from "components/Grid/GridContainer.jsx"
 import GridItem from "components/Grid/GridItem.jsx"
-import Button from "components/CustomButtons/Button.jsx"
 import Parallax from "components/Parallax/Parallax.jsx"
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.jsx"
@@ -23,7 +22,6 @@ import SectionAbout from "./Sections/SectionAbout.jsx"
 // import SectionCompletedExamples from "./Sections/SectionCompletedExamples.jsx"
 // import SectionExamples from "./Sections/SectionExamples.jsx"
 // import SectionDownload from "./Sections/SectionDownload.jsx"
-import Favorite from "@material-ui/icons/Favorite"
 
 import componentsStyle from "assets/jss/material-kit-react/views/components.jsx"
 
@@ -36,7 +34,7 @@ class Components extends React.Component {
           brand="Projeto Meu Recomeço"
           rightLinks={<HeaderLinks />}
           fixed
-          color="transparent"
+          color="default"
           changeColorOnScroll={{
             height: 400,
             color: "white",
@@ -57,25 +55,6 @@ class Components extends React.Component {
                     recomeçar!!
                   </h3>
                   <br />
-                  <Button
-                    color="primary"
-                    size="lg"
-                    href="https://forms.gle/GFxu69ZA11RjBAna7"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Favorite className={classes.icons} />
-                    Quero ser tatuado
-                  </Button>
-                  <Button
-                    color="info"
-                    size="lg"
-                    href="https://forms.gle/hsX3teRpgjbTcGSa9"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Sou tatuador e quero fazer parte do projeto
-                  </Button>
                 </div>
               </GridItem>
             </GridContainer>
