@@ -14,8 +14,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'Meu Recomeço',
+        name: 'Meu Recomeco',
+        short_name: 'Meu Recomeco',
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',
@@ -27,7 +27,7 @@ module.exports = {
       resolve: `gatsby-source-instagram`,
       options: {
         type: `hashtag`,
-        hashtag: `italox`,
+        hashtag: `meurecomecotattoo`,
       },
     },
     {

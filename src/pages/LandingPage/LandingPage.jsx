@@ -7,14 +7,14 @@ import withStyles from "@material-ui/core/styles/withStyles"
 // @material-ui/icons
 
 // React icons
-import { FaPlay } from "react-icons/fa"
+// import { FaPlay } from "react-icons/fa"
 
 // core components
 import Header from "components/Header/Header.jsx"
 import Footer from "components/Footer/Footer.jsx"
-import GridContainer from "components/Grid/GridContainer.jsx"
-import GridItem from "components/Grid/GridItem.jsx"
-import Button from "components/CustomButtons/Button.jsx"
+// import GridContainer from "components/Grid/GridContainer.jsx"
+// import GridItem from "components/Grid/GridItem.jsx"
+// import Button from "components/CustomButtons/Button.jsx"
 import HeaderLinks from "components/Header/HeaderLinks.jsx"
 import Parallax from "components/Parallax/Parallax.jsx"
 
@@ -22,8 +22,9 @@ import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.js
 
 // Sections for this page
 import ProductSection from "./Sections/ProductSection.jsx"
-import TeamSection from "./Sections/TeamSection.jsx"
-import WorkSection from "./Sections/WorkSection.jsx"
+// import TeamSection from "./Sections/TeamSection.jsx"
+// import WorkSection from "./Sections/WorkSection.jsx"
+import { Helmet } from "react-helmet"
 
 const dashboardRoutes = []
 
@@ -32,49 +33,34 @@ class LandingPage extends React.Component {
     const { classes, ...rest } = this.props
     return (
       <div>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Meu Recomeço</title>
+          <meta
+            name="description"
+            content="Esse projeto consiste em fazer tatuagens totalmente
+                    gratuitas a pessoas que têm marcas de um passado não muito
+                    bom em suas vidas"
+          />
+        </Helmet>
         <Header
           color="transparent"
           routes={dashboardRoutes}
-          brand="Material Kit React"
+          brand="Tatuadores - Meu Recomeço"
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{
-            height: 400,
+            height: 200,
             color: "white",
           }}
           {...rest}
         />
-        <Parallax filter image={require("assets/img/landing-bg.jpg")}>
-          <div className={classes.container}>
-            <GridContainer>
-              <GridItem xs={12} sm={12} md={6}>
-                <h1 className={classes.title}>Projeto Meu Recomeço.</h1>
-                <h4>
-                  Esse projeto consiste em fazer tatuagens totalmente gratuitas
-                  a pessoas que têm marcas de um passado não muito bom em suas
-                  vidas... Se você for uma dessas pessoas ou conhece alguém que
-                  possa interessar me mande mensagem! Vamos recomeçar!!
-                </h4>
-                <br />
-                <Button
-                  color="danger"
-                  size="lg"
-                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaPlay />
-                  Watch video
-                </Button>
-              </GridItem>
-            </GridContainer>
-          </div>
-        </Parallax>
+        <Parallax small filter image={require("assets/img/landing-bg.jpg")} />
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
             <ProductSection />
-            <TeamSection />
-            <WorkSection />
+            {/* <TeamSection />
+            <WorkSection /> */}
           </div>
         </div>
         <Footer />

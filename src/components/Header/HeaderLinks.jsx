@@ -26,6 +26,11 @@ function HeaderLinks({ ...props }) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
+        <Button href="/" color="transparent" className={classes.navLink}>
+          Inicio
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
         <Button
           href="https://forms.gle/GFxu69ZA11RjBAna7"
           color="transparent"
