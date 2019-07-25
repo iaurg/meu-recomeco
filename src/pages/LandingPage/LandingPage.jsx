@@ -26,8 +26,6 @@ import ProductSection from "./Sections/ProductSection.jsx"
 // import WorkSection from "./Sections/WorkSection.jsx"
 import { Helmet } from "react-helmet"
 
-const dashboardRoutes = []
-
 class LandingPage extends React.Component {
   render() {
     const { classes, ...rest } = this.props
@@ -45,7 +43,6 @@ class LandingPage extends React.Component {
         </Helmet>
         <Header
           color="transparent"
-          routes={dashboardRoutes}
           brand="Tatuadores - Meu Recomeço"
           rightLinks={<HeaderLinks />}
           fixed
