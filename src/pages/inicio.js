@@ -12,7 +12,7 @@ class Inicio extends React.Component {
     return (
       <Layout>
         <div className="container mx-auto flex flex-wrap">
-          <div className="flex flex-col w-1/2 xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
+          <div className="flex flex-col w-1/1 p-2 sm:w-1/2 justify-center lg:items-start overflow-y-hidden">
             <h1 className="my-4 text-3xl md:text-5xl text-green-800 font-bold leading-tight text-center md:text-left">
               Participe do recomeço de alguém
             </h1>
@@ -36,14 +36,14 @@ class Inicio extends React.Component {
             </div>
           </div>
 
-          <div className="w-1/2 xl:w-3/5 py-6 overflow-y-hidden">
+          <div className="w-1/2 xl:w-3/5 hidden sm:block py-6 overflow-y-hidden">
             <img
-              className="w-5/6 mx-auto lg:mr-0 slide-in-bottom"
+              className="w-5/6 sm:w-1/1 mx-auto lg:mr-0 slide-in-bottom"
               src={ImageDestaque}
             />
           </div>
 
-          <div className="w-full text-center">
+          <div className="w-full text-center p-4">
             <h2 className="text-4xl font-semibold text-teal-600">
               Sobre o projeto
             </h2>
