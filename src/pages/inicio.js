@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import ImageDestaque from '../assets/images/liberta.svg'
 
@@ -36,9 +37,9 @@ class Inicio extends React.Component {
             </div>
           </div>
 
-          <div className="w-1/2 xl:w-3/5 hidden sm:block py-6 overflow-y-hidden">
+          <div className="w-1/2 xl:w-1/2 hidden sm:block py-6 overflow-y-hidden">
             <img
-              className="w-5/6 sm:w-1/1 mx-auto lg:mr-0 slide-in-bottom"
+              className="w-full sm:w-1/1 md:w-full mx-auto lg:mr-0 slide-in-bottom"
               src={ImageDestaque}
             />
           </div>
@@ -53,6 +54,11 @@ class Inicio extends React.Component {
               vidas... Se você for uma dessas pessoas ou conhece alguém que
               possa interessar faça parte do projeto! Vamos recomeçar!!
             </p>
+            <Link to="/tatuadores">
+              <button className="p-2 mr-2 border-blue-400 bg-blue-600 border rounded text-white">
+                Tatuadores Participantes
+              </button>
+            </Link>
           </div>
         </div>
       </Layout>
