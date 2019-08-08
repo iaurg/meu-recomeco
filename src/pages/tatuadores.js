@@ -52,7 +52,11 @@ class Tatuadores extends React.Component {
               </span>
               <span className="font-semibold mr-2 text-left flex-auto">
                 Precisamos de mais tatuadores{' '}
-                <a href="" className="underline">
+                <a
+                  href="https://forms.gle/hsX3teRpgjbTcGSa9"
+                  className="underline"
+                  target="_blank"
+                >
                   Inscreva-se
                 </a>
               </span>
