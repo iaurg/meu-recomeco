@@ -42,9 +42,11 @@ class Inicio extends React.Component {
                   Preciso ser tatuado
                 </button>
               </a>
-              <button className="p-2 border-indigo-400 bg-indigo-400 border rounded text-white">
-                Sou tatuador
-              </button>
+              <a href="https://forms.gle/hsX3teRpgjbTcGSa9" target="_blank">
+                <button className="p-2 border-indigo-400 bg-indigo-400 border rounded text-white">
+                  Sou tatuador
+                </button>
+              </a>
             </div>
           </div>
 
