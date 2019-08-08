@@ -67,7 +67,7 @@ class Tatuadores extends React.Component {
           </div>
           <div>
             {this.state.loading ? (
-              <p className="text-center">Caaaaaaaaaaaaaaaarregando!</p>
+              <p className="text-center">Carregando!</p>
             ) : (
               <TatuadorCard data={this.state.data} />
             )}

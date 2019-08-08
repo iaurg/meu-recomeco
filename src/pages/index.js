@@ -65,11 +65,11 @@ class Inicio extends React.Component {
               vidas... Se você for uma dessas pessoas ou conhece alguém que
               possa interessar faça parte do projeto! Vamos recomeçar!!
             </p>
-            {/* <Link to="/tatuadores">
+            <Link to="/tatuadores">
               <button className="p-2 mr-2 border-blue-400 bg-blue-600 border rounded text-white">
                 Tatuadores Participantes
               </button>
-            </Link> */}
+            </Link>
           </div>
         </div>
       </Layout>
