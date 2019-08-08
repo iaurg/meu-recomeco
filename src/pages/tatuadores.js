@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios'
+import { Helmet } from 'react-helmet'
 import TatuadorCard from '../components/TatuadorCard'
 import Layout from '../components/layout'
 
@@ -31,6 +32,15 @@ class Tatuadores extends React.Component {
   render() {
     return (
       <Layout>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Meu Recomeço - Tatuadores Participantes</title>
+          <meta
+            name="description"
+            content="Esse projeto consiste em fazer tatuagens totalmente gratuitas em
+    pessoas que têm marcas de um passado não muito bom em suas vidas"
+          />
+        </Helmet>
         <div className="container mx-auto">
           <div className=" text-center py-4 lg:px-4 p-2">
             <div

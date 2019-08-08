@@ -7,10 +7,10 @@ module.exports = {
     pessoas que têm marcas de um passado não muito bom em suas vidas`,
   },
   plugins: [
+    'gatsby-plugin-postcss',
     'gatsby-plugin-resolve-src',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-offline',
-    'gatsby-plugin-postcss',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -20,7 +20,7 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        //icon: 'src/assets/img/favicon.png', // This path is relative to the root of the site.
+        // icon: 'src/assets/img/favicon.png', // This path is relative to the root of the site.
       },
     },
     {
@@ -34,9 +34,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // replace "UA-XXXXXXXXX-X" with your own Tracking ID
-        trackingId: "UA-144579608-1",
+        trackingId: 'UA-144579608-1',
       },
     },
-    
   ],
 }

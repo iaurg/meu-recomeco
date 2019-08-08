@@ -1,4 +1,5 @@
 import React from 'react'
+import '../assets/css/global.css'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
