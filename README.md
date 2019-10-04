@@ -8,6 +8,8 @@ Itens a fazer:
 - Limpar componentes não utilizados
 - Criar página de tatuadores com listagem integrada ao sheet
 - Otimizar códigos desnecessário (refatorar)
+- Melhorar layout e estilo das páginas
+- Listar gráficos de pessoas
 
 Gatsby Material Kit React Starter is the adaptation of [Material Kit React](https://www.creative-tim.com/product/material-kit-react) to [Gatsby](https://www.gatsbyjs.org/).
  
