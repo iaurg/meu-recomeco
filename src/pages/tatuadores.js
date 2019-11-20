@@ -70,6 +70,11 @@ class Tatuadores extends React.Component {
             </div>
           </div>
           <div>
+            <p>
+              <b>
+                Todas as tatuagens do projeto devem ser feitas gratuitamente, caso você seja cobrado por favor nos informe no Instagram (@meurecomecotattoo) ou Facebook (Meu Recomeço Tattoo)
+              </b>
+            </p>
             {this.state.loading ? (
               <p className="text-center">Carregando!</p>
             ) : (
