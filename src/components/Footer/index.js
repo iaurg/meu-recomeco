@@ -31,15 +31,21 @@ const Footer = props => (
             Contribuir no Projeto Open Source
           </a>
           <a
-            href="https://twitter.com/abobeatx"
+            href="https://twitter.com/iaurg"
             target="_blank"
             className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
           >
-            © 2019 , made with by Italox
+            made with Gatsby by Italox
           </a>
         </div>
         <div className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">
-          @
+          <a
+            href="https://helenasutil.com/"
+            target="_blank"
+            className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
+          >
+            © 2020 Helena Sutil
+          </a>
         </div>
       </div>
     </div>
